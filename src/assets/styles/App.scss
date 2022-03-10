@@ -1,3 +1,16 @@
+@font-face {
+  font-family: 'hubballiregular';
+  src: url('../fonts/hubballi-regular-webfont.woff2') format('woff2'),
+       url('../fonts/hubballi-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+
 .App {
   text-align: center;
 }
