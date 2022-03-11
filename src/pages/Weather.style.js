@@ -15,4 +15,12 @@ export const Container = styled.div`
       height: 100%;
     }
   }
+
+  .right-side{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    align-items: center;
+    padding-top: 30px;
+  }
 `;

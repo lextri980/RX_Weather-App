@@ -1,6 +1,7 @@
 import React from "react";
 import * as S from "./Weather.style";
 import sunny from "../assets/img/sunny.jpg";
+import Form from "../components/Form/Form";
 
 function Weather() {
   return (
@@ -9,8 +10,8 @@ function Weather() {
         <img src={sunny} alt="sunny" />
       </div>
       <div className="right-side">
-        
-        </div>
+        <Form />
+      </div>
     </S.Container>
   );
 }
