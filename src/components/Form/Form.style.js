@@ -4,9 +4,11 @@ export const Container = styled.div`
   .header {
     display: flex;
     align-items: center;
+    justify-content: center;
 
     .text {
       margin-right: 30px;
+      width: 500px;
     }
 
     .btn {
@@ -16,5 +18,8 @@ export const Container = styled.div`
 
   .body{
     margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
   }
 `;

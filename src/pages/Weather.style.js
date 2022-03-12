@@ -23,4 +23,22 @@ export const Container = styled.div`
     align-items: center;
     padding-top: 30px;
   }
+
+  
+  @media (max-width: 1400px) {
+    .left-side {
+      display: none;
+    }
+
+    .right-side{
+      /* padding-left: 40px; */
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 1100px) {
+    .right-side{
+      padding: 30px;
+    }
+  }
 `;

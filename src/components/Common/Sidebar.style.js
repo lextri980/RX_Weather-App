@@ -24,8 +24,12 @@ export const Container = styled.div`
     margin-bottom: 10px;
     cursor: default;
 
-    .p-name{
+    .p-prj{
       font-size: 20px;
+    } 
+
+    .p-prj-sub{
+      font-size: 16px;
     } 
 
     p {
@@ -56,6 +60,10 @@ export const Container = styled.div`
 
       span{
         margin-left: 10px;
+      }
+
+      .click-span {
+        color: #5EE6EB;
       }
 
       &:hover {

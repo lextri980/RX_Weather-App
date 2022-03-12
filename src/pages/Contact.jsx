@@ -1,9 +1,8 @@
-import React from 'react'
+import React from "react";
+import * as S from "./Contact.style";
 
 function Contact() {
-  return (
-    <div></div>
-  )
+  return <S.Container></S.Container>;
 }
 
-export default Contact
+export default Contact;

@@ -9,7 +9,7 @@ function PublicRoute() {
 
   return (
     <S.Container>
-      <Sidebar setTitle={setTitle} />
+      <Sidebar title={title} setTitle={setTitle} />
       <div className="body">
         <Header title={title} />
         <Outlet />

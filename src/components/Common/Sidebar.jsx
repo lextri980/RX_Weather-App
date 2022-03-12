@@ -1,20 +1,23 @@
 import React from "react";
 import * as S from "./Sidebar.style";
-import background from "../../assets/img/background.jpg";
+import background from "../../assets/img/day.jpg";
 import { Link } from "react-router-dom";
 import HomeIcon from "@mui/icons-material/Home";
 import WbSunnyIcon from "@mui/icons-material/WbSunny";
-import ContactlessIcon from "@mui/icons-material/Contactless";
 
-function Sidebar({ setTitle }) {
-  //handle onClick
+function Sidebar({ title, setTitle }) {
+  console.log(title);
 
   return (
     <S.Container>
       <img src={background} alt="bg-img" />
       <div className="info">
-        <p className="p-name">Nguyen Tien Minh</p>
-        <p>Student ID: 1801040146</p>
+        <p className="p-prj">
+          WEATHER APP
+        </p> 
+        <p className="p-prj-sub">
+          IWS Project
+        </p>  
       </div>
       <div className="navbar">
         <Link
@@ -24,8 +27,17 @@ function Sidebar({ setTitle }) {
           }}
         >
           <div className="navbar-item home">
-            <HomeIcon />
-            <span>Homepage</span>
+            {title === "Homepage" ? (
+              <>
+                <HomeIcon className="click-span" />
+                <span className="click-span">Homepage</span>
+              </>
+            ) : (
+              <>
+                <HomeIcon />
+                <span>Homepage</span>
+              </>
+            )}
           </div>
         </Link>
         <Link
@@ -35,21 +47,39 @@ function Sidebar({ setTitle }) {
           }}
         >
           <div className="navbar-item weather">
-            <WbSunnyIcon />
-            <span>Weather</span>
+            {title === "Weather" ? (
+              <>
+                <WbSunnyIcon className="click-span" />
+                <span className="click-span">Weather</span>
+              </>
+            ) : (
+              <>
+                <WbSunnyIcon />
+                <span>Weather</span>
+              </>
+            )}
           </div>
         </Link>
-        <Link
+        {/* <Link
           to="/contact"
           onClick={() => {
             setTitle("Contact");
           }}
         >
           <div className="navbar-item contact">
-            <ContactlessIcon />
-            <span>Contact</span>
-          </div>
-        </Link>
+            {title === "Contact" ? (
+              <>
+                <ContactlessIcon className="click-span" />
+                <span className="click-span">Contact</span>
+              </>
+            ) : (
+              <>
+                <ContactlessIcon />
+                <span>Contact</span>
+              </>
+            )}
+          </div> */}
+        {/* </Link> */}
       </div>
     </S.Container>
   );

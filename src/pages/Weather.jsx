@@ -1,6 +1,6 @@
 import React from "react";
 import * as S from "./Weather.style";
-import sunny from "../assets/img/sunny.jpg";
+import sunny from "../assets/img/backgrounds.jpg";
 import Form from "../components/Form/Form";
 
 function Weather() {
