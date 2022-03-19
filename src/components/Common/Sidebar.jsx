@@ -6,18 +6,12 @@ import HomeIcon from "@mui/icons-material/Home";
 import WbSunnyIcon from "@mui/icons-material/WbSunny";
 
 function Sidebar({ title, setTitle }) {
-  console.log(title);
-
   return (
     <S.Container>
       <img src={background} alt="bg-img" />
       <div className="info">
-        <p className="p-prj">
-          WEATHER APP
-        </p> 
-        <p className="p-prj-sub">
-          IWS Project
-        </p>  
+        <p className="p-prj">WEATHER APP</p>
+        <p className="p-prj-sub">IWS Project</p>
       </div>
       <div className="navbar">
         <Link
@@ -60,26 +54,6 @@ function Sidebar({ title, setTitle }) {
             )}
           </div>
         </Link>
-        {/* <Link
-          to="/contact"
-          onClick={() => {
-            setTitle("Contact");
-          }}
-        >
-          <div className="navbar-item contact">
-            {title === "Contact" ? (
-              <>
-                <ContactlessIcon className="click-span" />
-                <span className="click-span">Contact</span>
-              </>
-            ) : (
-              <>
-                <ContactlessIcon />
-                <span>Contact</span>
-              </>
-            )}
-          </div> */}
-        {/* </Link> */}
       </div>
     </S.Container>
   );

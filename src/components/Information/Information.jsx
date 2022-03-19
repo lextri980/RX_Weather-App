@@ -16,8 +16,6 @@ import earthImg from "../../assets/img/earth.jpg";
 import * as S from "./Information.style";
 
 function Information({ weatherData }) {
-  console.log(weatherData);
-
   const capitalizeFirstLetter = (string) => {
     return string.charAt(0).toUpperCase() + string.slice(1);
   };
