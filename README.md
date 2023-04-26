@@ -19,4 +19,4 @@ Before you continue, ensure you meet the following requirements:
 - UI lib: `material-ui`
 - Style: `scss` `styled-components`
 - Date formater: `moment
-- API: [openweathermap] (https://api.openweathermap.org/data/2.5/weather)
+- API: https://api.openweathermap.org/data/2.5/weather
