@@ -15,10 +15,8 @@ Before you continue, ensure you meet the following requirements:
 - Run `npm start`
 
 ### Technologies
-#### 1. Client folder
 - Framework: `ReactJS`
-- State management: `redux` `redux-saga`
-- Form handler: `react-hook-form` `yup`
-- UI lib: `nextui` `material-ui`
+- UI lib: `material-ui`
 - Style: `scss` `styled-components`
 - Date formater: `moment
+- API: [openweathermap] (https://api.openweathermap.org/data/2.5/weather)
